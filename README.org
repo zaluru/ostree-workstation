@@ -1,5 +1,6 @@
 #+title: ostree workstation
 [[https://github.com/zaluru/ostree-workstation/actions/workflows/main.yml][file:https://github.com/zaluru/ostree-workstation/actions/workflows/main.yml/badge.svg]]
+
 My workstation setup with [[https://github.com/riverwm/river][river]], [[https://github.com/hyprwm/Hyprland][hyprland]] and [[https://github.com/leftwm/leftwm][leftwm]].
 
 The deployed workstation is later configured with an ansible playbook.
