@@ -11,5 +11,5 @@ RUN rpm-ostree install river leftwm podman-docker \
     # to be able to see if anything important was placed there 
     && tree /var \
     # should probably find another way to fix it
-    rm -r /var/*
+    && rm -r /var/* \
     && ostree container commit
