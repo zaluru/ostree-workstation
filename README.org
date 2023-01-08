@@ -1,0 +1,13 @@
+#+title: ostree workstation
+My workstation setup with [[https://github.com/riverwm/river][river]], [[https://github.com/hyprwm/Hyprland][hyprland]] and [[https://github.com/leftwm/leftwm][leftwm]].
+
+The deployed workstation is later configured with an ansible playbook.
+* Installation
+You need to run an existing OSTree based system like Fedora CoreOS, Fedora IoT or Fedora Silverblue.
+Then you can rebase to this image with:
+#+BEGIN_SRC shell
+sudo rpm-ostree rebase --experimental ostree-unverified-registry:ghcr.io/zaluru/ostree-workstation:latest
+#+END_SRC
+* Credits
+[[https://ypsidanger.com/][Jorge Castro]] from whom i learned about the OStree ability to rebase from an oci image, thanks to his [[https://www.ypsidanger.com/building-your-own-fedora-silverblue-image/][post]].
+[[https://www.piware.de/][Martin Pitt]] and his [[https://github.com/martinpitt/ostree-pitti-workstation][repo]] on which i based my [[https://github.com/zaluru/ostree-base][base image]].
