@@ -3,7 +3,7 @@
 
 My workstation setup with [[https://github.com/riverwm/river][river]], [[https://github.com/hyprwm/Hyprland][hyprland]] and [[https://github.com/leftwm/leftwm][leftwm]].
 
-The deployed workstation is later configured with an ansible playbook.
+The deployed workstation is later configured with an [[https://github.com/zaluru/ostree-workstation-playbook][ansible playbook]].
 * Installation
 You need to run an existing OSTree based system like Fedora CoreOS, Fedora IoT or Fedora Silverblue.
 Then you can rebase to this image with:

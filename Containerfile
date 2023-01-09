@@ -5,7 +5,7 @@ RUN wget https://copr.fedorainfracloud.org/coprs/atim/leftwm/repo/fedora-37/atim
 RUN wget https://nix-community.github.io/nix-installers/x86_64/nix-multi-user-2.9.1.rpm -O ./nix-multi-user.rpm 
 
 RUN rpm-ostree install alacritty river leftwm podman-docker ./nix-multi-user.rpm \
-    && systemctl enable nix-daemon \
+    && systemctl enable --now nix-daemon \
     && rm -f /etc/yum.repos.d/alebastr-river.repo \
     && rm -f /etc/yum.repos.d/atim-leftwm.repo \
     && rm ./nix-multi-user.rpm \
